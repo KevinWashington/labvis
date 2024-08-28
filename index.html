@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Cartesiano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <div id="quantidades">
+        <input type="number" id="quantCir" value="1">
+        <input type="number" id="quantRet" value="1">
+        <input type="number" id="quantTri" value="1">
+    </div>
+    <div id="filters">
+        <label for="circulo">
+            <input type="checkbox" checked id="circulo"></input>
+            circulos
+            <input type="color" value="#ff0000" id="corCir" onchange="draw()">
+        </label>
+        <label for="retangulos">
+            <input type="checkbox" checked id="retangulos"></input>
+            retangulos
+            <input type="color" value="#00ff00" id="corRet" onchange="draw()">
+        </label>
+        <label for="triangulos">
+            <input type="checkbox" checked id="triangulos"></input>
+            triangulos
+            <input type="color" value="#0000ff" id="corTri" onchange="draw()">
+        </label>
+        
+        
+    </div>
+    <div id="buttons">
+        <button id="generate">gerar</button>
+        <button id="clear">clear</button>        
+    </div>
+
+      
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    margin: 0;
+    background-color: #121214;
+    color: #fff;
+}
+
+canvas {
+    background-color: #fff;
+    border: 3px solid #ccc;
+    box-shadow: 10px 10px 219px 0px rgba(0,0,0,0.75);
+}
+
+button{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .875rem;
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: none;
+    border-radius: .625rem;
+    color: #fff;
+    background-color: #8234e9;
+}
+
+#quantidades{
+    display: flex;
+    gap: 20px;
+}
+
+#quantidades input{
+    width: 120px;
+}
+
+#filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0px;
+    height: 20px;
+    width: 120px;
+    border: 1px solid#fff;
+    border-radius: 5px;
+}
+
+input[type="color"] {
+    appearance: none;
+    
+    width: 1.15em;
+    height: 18px;
+    border-radius: 10px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    
+    border-radius: 5px 0px 0px 5px;
+    
+    color: currentColor;
+    width: 1.15em;
+    height: 20px;
+    border: none;
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    background-color: #8234e9;
+  }
+  
+  input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+    border: none;
+  }
+
+
+
